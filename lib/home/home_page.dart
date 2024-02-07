@@ -13,8 +13,6 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => HomePageState();
 }
 class HomePageState extends State<HomePage> {
-  final String apiUrl = 'http://stagingapi.sudlife.outwork.in:8500/mobile/v2/lead';
-  final String userId = 'd595995e5945a3996b8b71f144fea742';
   HomeBloc? bloc;
   @override
   void initState() {
