@@ -16,7 +16,7 @@ class HomeBloc extends BlocBase {
 
   void setListeners() {
     _isLoading.add(true);
-    HomeService().getUserLevelList().then((value){
+    HomeService().getDogImages().then((value){
       _isLoading.add(false);
       if(value.error==null){
         _selectImg.add(value.data!);

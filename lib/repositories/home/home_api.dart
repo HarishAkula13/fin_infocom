@@ -5,7 +5,7 @@ import '../base/base_api_service.dart';
 import '../endpoint/endpoint.dart';
 class HomeService extends BaseAPIService{
   HomeService();
-  Future<RequestResponse<DogImages>> getUserLevelList() {
+  Future<RequestResponse<DogImages>> getDogImages() {
     return make(RequestType.GET, EndPoints.dogImages)
         .then((result) {
       if (result.data != null) {
