@@ -6,10 +6,7 @@ import '../repositories/home/home_api.dart';
 typedef BlocProvider<HomeBloc> HomeFactory();
 class HomeBloc extends BlocBase {
   BehaviorSubject<bool> _isLoading =BehaviorSubject.seeded(false);
-  BehaviorSubject<List<dynamic>> _selectEmp = BehaviorSubject.seeded([]);
-    BehaviorSubject<DogImages> _selectImg = BehaviorSubject();
-  Stream<List<dynamic>> get selectEmp => _selectEmp;
-  Sink<List<dynamic>> get addSelectEmp => _selectEmp;
+  BehaviorSubject<DogImages> _selectImg = BehaviorSubject();
   Stream<DogImages> get selectImg => _selectImg;
   Stream<bool> get isLoading=> _isLoading;
 
